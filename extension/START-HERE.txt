@@ -1,0 +1,34 @@
+MeasureLive — version 0.1.0
+
+INSTALL FOR FREE
+1. If you downloaded the ZIP, extract it to a folder you will keep.
+2. In desktop Chrome, type chrome://extensions in the address bar.
+3. Turn on Developer mode at the top right.
+4. Click Load unpacked and select this folder (the one with manifest.json).
+5. Pin MeasureLive from Chrome's puzzle-piece Extensions menu.
+
+GET YOUR FIRST SUGGESTION
+1. Click the MeasureLive icon and enter your body measurements in cm or inches.
+2. Save your measurements. You can edit or delete them later.
+3. Enable "Find my size as I shop" and accept Chrome's website-access prompt
+   for automatic scanning, then open or refresh a clothing product page.
+   Alternatively, use "Find my size on this page" to scan only that page.
+4. If the store's chart is not loaded, open its Size guide. MeasureLive will
+   rescan when the chart appears. Minimize the panel with the X if needed.
+
+WHAT TO EXPECT
+Suggestions use the store's readable BODY size chart. The extension handles
+many text-table layouts but does not guarantee support for every store.
+Image-only charts, protected widgets, non-English guides and GARMENT
+dimensions may need a manual check. Use Chart tools to paste a text chart.
+Fit still depends on cut, fabric, and preference; a suggestion is not a guarantee.
+
+PRIVACY
+Measurements stay in this Chrome profile. No account, paid AI, analytics or
+cloud sync. The extension may request a linked size guide from the shop's
+own website without sending your measurements. Turn off automatic scanning
+to remove broad website access. Delete measurements in the extension's guide.
+
+UPDATING
+After changing extension files, click Reload on chrome://extensions, then
+refresh shopping tabs. Keep this folder in place while the extension is installed.

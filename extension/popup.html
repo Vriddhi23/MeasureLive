@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MeasureLive — My measurements</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <div class="app">
+    <header class="topbar"><a class="brand" href="popup.html" aria-label="MeasureLive home"><span class="brand-mark" aria-hidden="true">m<span>↗</span></span>MeasureLive<span class="beta">BETA</span></a><span class="private-dot" title="Stored on this device" aria-label="Stored on this device"></span></header>
+    <main>
+      <section class="intro">
+        <div class="intro-copy"><p class="eyebrow">YOUR BODY. EVERY BRAND.</p><h1>Good clothes.<br>A better fit.</h1><p class="lede">Measure once. Shop with<br>a little more confidence.</p></div>
+        <svg class="figure" viewBox="0 0 120 180" fill="none" aria-hidden="true"><ellipse cx="61" cy="167" rx="37" ry="7" fill="#dfe5d5"/><circle cx="60" cy="24" r="13" fill="#e2b297"/><path d="M46 44 31 52 18 91 30 97 43 68 42 109 78 109 77 68 90 97 102 91 89 52 74 44Z" fill="#8caa79"/><path d="M43 109 40 157 54 158 61 122 68 158 82 157 78 109" fill="#3c5b45"/><path d="m40 157-4 9h19l-1-9m14 0v9h20l-6-10" fill="#e8ccae"/><path d="M40 69h42M44 97h34" stroke="#fff9ed" stroke-width="2" stroke-dasharray="3 3"/><path d="M111 42v115m-4-115h8m-8 115h8" stroke="#ad9f7f" stroke-width="1.5"/><circle cx="42" cy="69" r="3" fill="#d98758"/><circle cx="78" cy="97" r="3" fill="#d98758"/></svg>
+      </section>
+      <div class="section-heading"><div><h2>Your measurements</h2><p id="saved-label">A small setup for a better starting point.</p></div><div class="units" role="group" aria-label="Measurement units"><button type="button" id="unit-cm" aria-pressed="true">cm</button><button type="button" id="unit-in" aria-pressed="false">in</button></div></div>
+      <form id="profile-form">
+        <div class="fields">
+          <label for="height"><span>Height</span><div class="input-wrap"><input id="height" name="height" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 170" aria-describedby="height-help"><span class="unit-label">cm</span></div><small id="height-help">Head to floor, barefoot</small></label>
+          <label for="chest"><span>Chest / bust</span><div class="input-wrap"><input id="chest" name="chest" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 94" aria-describedby="chest-help"><span class="unit-label">cm</span></div><small id="chest-help">Around the fullest part</small></label>
+          <label for="waist"><span>Waist</span><div class="input-wrap"><input id="waist" name="waist" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 78" aria-describedby="waist-help"><span class="unit-label">cm</span></div><small id="waist-help">Around your natural waist</small></label>
+          <label for="hips"><span>Hips <em>optional</em></span><div class="input-wrap"><input id="hips" name="hips" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 98" aria-describedby="hips-help"><span class="unit-label">cm</span></div><small id="hips-help">Around the fullest part</small></label>
+          <label for="sleeve"><span>Arm / sleeve length</span><div class="input-wrap"><input id="sleeve" name="sleeve" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 60" aria-describedby="sleeve-help"><span class="unit-label">cm</span></div><small id="sleeve-help">Shoulder to wrist, arm relaxed</small></label>
+          <label for="inseam"><span>Inside leg</span><div class="input-wrap"><input id="inseam" name="inseam" type="number" step="0.1" inputmode="decimal" placeholder="e.g. 79" aria-describedby="inseam-help"><span class="unit-label">cm</span></div><small id="inseam-help">Crotch to ankle, along inner leg</small></label>
+        </div>
+        <p class="field-note">Start with chest, waist or hips. Add the rest when you have them. Match the store’s measuring method.</p>
+        <button class="primary save" type="submit"><span id="save-text">Save my measurements</span><span aria-hidden="true">↗</span></button>
+        <p id="form-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+      <section class="auto-card"><div class="auto-heading"><div><h2>Find my size as I shop</h2><p>Read size charts automatically.</p></div><button id="auto-toggle" class="toggle" type="button" role="switch" aria-checked="false" aria-label="Automatically scan shopping pages"><span></span></button></div><p class="auto-help" id="auto-help">Optional access to websites. Your measurements stay here.</p></section>
+      <button type="button" id="scan-button" class="scan">Find my size on this page <span aria-hidden="true">→</span></button><p id="scan-status" class="status" role="status" aria-live="polite"></p>
+      <details class="help"><summary>A quick guide to a better match</summary><p>Use a flexible tape, keep it level, and don’t pull tight. Enter full chest, waist and hip circumferences.</p><p>If the size chart isn’t visible, open the store’s “Size guide.” MeasureLive reads text tables, including many charts inside popups. It cannot reliably read every image, widget or language.</p><p>Check whether the chart lists <strong>body measurements</strong> or <strong>garment measurements</strong>. Garment sizes need extra room and depend on fabric, so they do not produce an automatic recommendation.</p><p>Measurements are stored only in this Chrome profile. No account, analytics, cloud sync or AI subscription. You can edit or delete them here.</p><button id="delete-profile" class="delete" type="button">Delete my saved measurements</button></details>
+    </main>
+    <footer><span class="lock" aria-hidden="true">◇</span> On your device. In your control.<span class="version">v0.1</span></footer>
+  </div>
+  <script src="core.js"></script><script src="popup.js"></script>
+</body>
+</html>
